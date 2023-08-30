@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./styles.css" />
+    <title>RiTech Password Generator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Generate a <span class="green">random password</span></h1>
+        <p class="sub-header">Never use an insecure password again</p>
+      </div>
+      <div class="password-container">
+        <h2 id="password"></h2>
+      </div>
+      <div class="checkboxes">
+        <div class="row">
+          <div class="uppercase-div">
+            <input checked="checked" type="checkbox" id="uppercase" />
+            <label class="label" for="uppercase">Uppercase</label>
+          </div>
+          <div class="lowercase-div">
+            <input checked="checked" type="checkbox" id="lowercase" />
+            <label class="label" for="lowercase">Lowercase</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="numeric-div">
+            <input checked="checked" type="checkbox" id="numeric" />
+            <label class="label" for="numeric">Numeric</label>
+          </div>
+          <div class="symbols-div">
+            <input checked="checked" type="checkbox" id="symbols" />
+            <label class="label" for="symbols">Symbols</label>
+          </div>
+        </div>
+      </div>
+      <button onclick="generatePassword()" id="generate">
+        Generate password
+      </button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
